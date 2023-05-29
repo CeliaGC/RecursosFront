@@ -1,7 +1,7 @@
-<p>Esta carpeta contiene un proyecto no finalizado que solamente sirve para ejemplificar buenas prácticas en relación a:<p/>
+Esta carpeta contiene un proyecto no finalizado que solamente sirve para ejemplificar buenas prácticas en relación a:
 
-<p>Arquitectura<p/>
-<p>Naming<p/>
-<p>Uso de clases e IDs<p/>
-<p>Uso de etiquetas semánticas<p/>
-<p>Box Model<p/>
+Arquitectura
+Naming
+Uso de clases e IDs
+Uso de etiquetas semánticas
+Box Model
