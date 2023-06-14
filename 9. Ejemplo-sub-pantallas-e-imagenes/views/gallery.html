@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="../styles/gallery.css" />
+</head>
+
+<body class="dflt-clm-cntr">
+    <p>Galería</p>
+    </br>
+    <form id="gallery__form" class="dflt-clm-cntr">
+        <label for="gallery__form__title-inp">Título:</label>
+        <input type="text" id="gallery__form__title-inp" name="title">
+        </br>
+        <label for="gallery__form__text-inp">Descripción:</label>
+        <input type="text" id="gallery__form__text-inp" name="text">
+        </br>
+        <label for="gallery__form__file-inp">Seleccione un archivo:</label>
+        <input type="file" id="gallery__form__file-inp" name="file">
+        </br>
+        <input id="gallery__form__submit-btn" type="submit">
+    </form>
+    </br>
+    <div id="gallery__images-cntr" class="dflt-clm-cntr">
+    </div>
+
+    <!-- INCLUIDO EN EL INDEX, PARA PODER DEBUGGEARLO.
+    <script src="../scripts/gallery.js"></script> -->
+    <!-- POR ESO TAMBIÉN LLAMO A LA FUNCIÓN AQUÍ. SINO NO HARÍA FALTA. EN TODO CASO, BUSCAR ALTERNATIVAS.-->
+    <script>Gallery();</script>
+</body>
+
+</html>
