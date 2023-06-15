@@ -1,6 +1,6 @@
 let UI = {
-    home: {},
-    gallery: {}
+    home: null,
+    gallery: null
 };
 
 function Index() {

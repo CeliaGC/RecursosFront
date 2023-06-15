@@ -1,10 +1,12 @@
 function Gallery() {
-    UI.gallery = {
-        form: null,
-        formFields: {},
-        entriesContainer: null,
-        newEntry: {},
-        entries: []
+    if (UI.gallery == null) {
+        UI.gallery = {
+            form: null,
+            formFields: {},
+            entriesContainer: null,
+            newEntry: {},
+            entries: []
+        };
     };
 
     UI.gallery.form = document.getElementById("gallery__form");
@@ -16,7 +18,7 @@ function Gallery() {
 
     UI.gallery.entriesContainer = document.getElementById("gallery__images-cntr");
 
-    function addEntry(newEntry) {
+    function addEntry(newEntry, isNew) {
         let entryCntr = document.createElement("div");
         let entryTitle = document.createElement("p");
         let entryText = document.createElement("p");
@@ -34,8 +36,11 @@ function Gallery() {
         entryCntr.appendChild(entryImg);
 
         UI.gallery.entriesContainer.appendChild(entryCntr);
-        UI.gallery.entries.push(newEntry);
-        UI.gallery.newEntry = {};
+        
+        if (isNew == true) {
+            UI.gallery.entries.push(newEntry);
+            UI.gallery.newEntry = {};
+        }
     };
 
     function encodeImageFileAsURL(fileInput) {
@@ -44,7 +49,7 @@ function Gallery() {
         reader.readAsDataURL(file);
         reader.onloadend = function () {
             UI.gallery.newEntry.imgDataURL = reader.result;
-            addEntry(UI.gallery.newEntry);
+            addEntry(UI.gallery.newEntry, true);
         };
     };
 
@@ -60,4 +65,9 @@ function Gallery() {
         e.preventDefault();
         acceptEntry(e);
     });
+
+    for (let i = 0; i < UI.gallery.entries.length; i++) {
+        addEntry(UI.gallery.entries[i], false);
+    };
+
 };
