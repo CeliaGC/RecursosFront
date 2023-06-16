@@ -10,7 +10,7 @@ function Index() {
     function loadCallback() {
     };
 
-    function loadMainSubpage(viewLocation){
+    function loadMainSubpage(viewLocation) {
         mainSubpage.load(viewLocation, loadCallback);
     };
 
@@ -22,7 +22,24 @@ function Index() {
         });
     };
 
-    loadMainSubpage("views/home.html");
+    //routing simple
+    let routes = ["home", "gallery"];
+    let currentLocation = "home";
+    if(window.location.href.includes("/")){
+        currentLocation = window.location.href.split("/").at(-1);
+    }
+    if (!currentLocation || !routes.includes(currentLocation) || currentLocation == "home") {
+        loadMainSubpage("views/home.html");
+    } else {
+        loadMainSubpage("views/" + currentLocation + ".html");
+        for (let i = 0; i < mainNavButtons.length; i++) {
+            if (mainNavButtons[i].getAttribute("name") == currentLocation) {
+                mainNavButtons.removeClass("active");
+                mainNavButtons[i].classList.add("active");
+            }
+        }
+    }
+    //-------------------------------
 };
 
 Index();

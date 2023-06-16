@@ -36,7 +36,7 @@ function Gallery() {
         entryCntr.appendChild(entryImg);
 
         UI.gallery.entriesContainer.appendChild(entryCntr);
-        
+
         if (isNew == true) {
             UI.gallery.entries.push(newEntry);
             UI.gallery.newEntry = {};
@@ -70,4 +70,7 @@ function Gallery() {
         addEntry(UI.gallery.entries[i], false);
     };
 
+    //routing simple
+    window.history.replaceState(null, "unused", "http://127.0.0.1:5500/#/gallery");
+    //-------------------------------
 };
