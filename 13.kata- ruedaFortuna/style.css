@@ -1,0 +1,34 @@
+body {
+    background-image: url(img/WhatsApp\ Image\ 2023-06-26\ at\ 12.18.21.jpeg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#button {
+    display: inline-block;
+    color: red;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 150px;
+    height: 100px;
+    padding: 10px 20px;
+    background-image: url(https://images.vexels.com/media/users/3/309022/isolated/preview/ab1a7df48a4395bb27291129c9cac0ee-personaje-de-la-muerte-del-a-ngel-de-la-muerte.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 35px;
+}
+
+.div-result{
+    background-image: url(img/vecteezy_bubbles-comic-style_1195542.png);
+    
+    background-size: cover;
+    background-position: center;
+    height:18.75rem;
+    width: 18.75rem;
+    /* margin-left: 31.25rem; */
+    transform: translate(150%, -20%);
+
+}

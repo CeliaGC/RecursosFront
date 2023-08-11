@@ -1,0 +1,39 @@
+body {
+    background-image: url(WhatsApp\ Image\ 2023-06-26\ at\ 12.18.21.jpeg);
+}
+
+#btn-Angel {
+    width: 12.5rem;
+    height: 6.25rem;
+    padding: .625rem 1.25rem;
+    background-color: purple;
+    border-radius: .1875rem;
+   
+}
+
+#btn-Angel:hover{
+    background-color: cadetblue; 
+    transition: 0.3s ease;
+}
+
+.div-result{
+    background-image: url(vecteezy_bubbles-comic-style_1195542.png);
+    background-size: cover;
+    background-position: center;
+    height:350px;
+    width: 350px;
+    border: 1px black solid;
+    /* margin-left: 1.25rem; */
+    transform: translate(130%, -20%);
+    text-align: center;
+    
+
+}
+
+.div-result p{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    padding: 10% 20%;
+
+}
