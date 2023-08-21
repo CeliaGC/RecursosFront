@@ -98,4 +98,5 @@ export {WheelOfDoom}
 //todo ese código se carga una y otra vez, teniendo además que leer el árbol de nodos y reescribirlo entero con los cambios, cuando lo único
 //que cambia es un nombre. Pero qué somos, animales??
 
-//En la rama dev-merida-games vamos a ver estos malos usos corregidos y algún ejemplo más de useState
+//En la rama dev-merida-games vamos a corregir estos malos usos y a hacer este componente con prácticas más "Reactónicas", que gracias a GePeTo
+//es una de mis palabras favoritas
