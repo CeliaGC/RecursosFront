@@ -2,6 +2,7 @@ import "../Style/WheelOfDoom.css"
 import React, { useState } from 'react';
 
 function WheelOfDoom() {
+    const [count, setCount] = useState(0)
     const [clicked, setClicked] = useState(false);
     const arrayNames = ["Anthony", "Brayan", "Antonio", "Rodrigo", "Rebeca", "Christian", "Raúl", "Yo", "Juan", "Miguel", "Isabel", "Celia", "Javi", "Laura A Secas", "Slava", "Fran", "Celia Prieto", "Gemma", "Ninguno jaja"];
     const paragraph = document.createElement('h3');
@@ -10,7 +11,7 @@ function WheelOfDoom() {
     const handleClik = () => {
         
         selector(arrayNames) 
-        setClicked = true
+        setClicked(true)
     }
 
     function selector(arrayNames){
@@ -25,8 +26,10 @@ function WheelOfDoom() {
         let result = Math.floor(Math.random() * arrayNames.length);
         let afortunado = arrayNames[result];
         console.log(arrayNames[result]);
-        paragraph.innerText = 'El Brishante afortunado esssss ' + afortunado;
+        paragraph.innerHTML = `El Brishante afortunado esssss<br>` + afortunado;
         globo.appendChild(paragraph);
+
+        setCount(count + 1)
 
     }
 
@@ -38,6 +41,10 @@ function WheelOfDoom() {
         <button id="button" onClick={handleClik}>
             Start
         </button>
+        <div>
+            <p>You clicked {count} times</p>
+ 
+        </div>
         
     </main>
     </>

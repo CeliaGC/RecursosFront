@@ -9,3 +9,9 @@
  
 /* } */
 
+#root {
+  height:100vh;
+  width: 100vw;
+  background-image:url(C:\Users\juanc\Desktop\F5Merida\RecursosFront\Merida-Games\src\assets\img\angel.jpeg);
+  position:absolute;
+}
