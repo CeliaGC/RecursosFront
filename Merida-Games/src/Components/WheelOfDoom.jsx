@@ -129,4 +129,7 @@ export {WheelOfDoom}
 // Мы даже могли бы обняться, плача.
 // И в конце концов, это был бы реактивный способ сделать то же самое, что мы сделали в главной ветке.
 
+//Next step >>>>>> vamos a almacenar la lista de participantes en una fake api. Haremos CRUD de estos registros y añadiremos
+//una animación para el sorteo, con los nombres girando en una ruleta, o iluminándose, pasando por un carrusel... diversión!
+
 
