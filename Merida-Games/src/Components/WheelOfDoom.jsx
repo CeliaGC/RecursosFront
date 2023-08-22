@@ -62,7 +62,7 @@ function WheelOfDoom() {
 export {WheelOfDoom}
 
     //El brishante afortunado es <br></br> {clicked ? afortunado : "..."} >>>>>> Ahora, en lugar de leer todo el DOM y reescribirlo entero
-    //para introducir el único cambio que es el el contenido de "afortunado", React hace una copia virtual del DOM y sólo lee y acutaliza 
+    //para introducir el único cambio que es el el contenido de "afortunado", React hace una copia virtual del DOM y sólo lee y actualiza 
     //esa variable "afortunado" en el nodo h3 cuando una vez que hayamos clicado el botón. Ese signo de interrogación es una forma 
     //de escribir un condicional. Si clicked es false, se renderiza el texto con los puntos suspensivos, si es true, vemos el texto
     //y se sustituyen los puntos suspensivos con el nombre del ganador.
