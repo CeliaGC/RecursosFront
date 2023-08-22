@@ -1,4 +1,4 @@
-import "../Style/WheelOfDoom.css"
+import "../wheelOfDoom/WheelOfDoom.css"
 import React, { useState } from 'react';
 
 

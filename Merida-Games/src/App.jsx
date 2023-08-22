@@ -1,5 +1,5 @@
 import './App.css'
-import { WheelOfDoom } from './Components/WheelOfDoom/WheelOfDoom'
+import { WheelOfDoom } from './Components/wheelOfDoom/WheelOfDoom'
 
 function App() {
 
