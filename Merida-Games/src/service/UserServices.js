@@ -17,6 +17,10 @@ async getAllUsers() {
     let response = await apiClient.get("/Users");
     let allUsers = response.data;
     return allUsers;
-}
+},
+
+    async submit(newUser){
+      await apiClient.post("/Users", newUser)
+    },
 
 }
