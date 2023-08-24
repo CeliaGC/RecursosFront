@@ -11,6 +11,7 @@ function WheelOfDoom() {
 
     const arrayNames = ["Anthony", "Brayan", "Antonio", "Rodrigo", "Rebeca", "Christian", "Raúl", "Yo", "Juan", "Miguel", "Isabel", "Celia", "Javi", "Laura A Secas", "Slava", "Fran", "Celia Prieto", "Gemma", "Ninguno jaja"]; // tu lista de nombres
 
+    // useEffect impide que la carga de los datos entre en un bucle infinito
     useEffect(() => {
         getData();
       }, []);
@@ -35,8 +36,6 @@ function WheelOfDoom() {
       };
 
     //   getData();
-      console.log(users);
-   
 
     return (
         <main id="background">
@@ -50,9 +49,13 @@ function WheelOfDoom() {
             </div>
             <div>
             <p>You clicked {count} times</p>
-            <div className="coder-list">
 
-            </div>
+            {users.map(u => (
+                <div id="user" key={u.id}>{u.Name}</div>
+            ))}
+        
+
+           
  
         </div>
            
