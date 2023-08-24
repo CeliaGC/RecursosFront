@@ -1,14 +1,20 @@
+import UserHandler from "../../handler/userHandler";
 import "../wheelOfDoom/WheelOfDoom.css"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 function WheelOfDoom() {
     const [clicked, setClicked] = useState(false);
     const [afortunado, setAfortunado] = useState("");
     const [count, setCount] = useState(0)
+    const [users, setUsers] = useState([])
 
     const arrayNames = ["Anthony", "Brayan", "Antonio", "Rodrigo", "Rebeca", "Christian", "Raúl", "Yo", "Juan", "Miguel", "Isabel", "Celia", "Javi", "Laura A Secas", "Slava", "Fran", "Celia Prieto", "Gemma", "Ninguno jaja"]; // tu lista de nombres
 
+    useEffect(() => {
+        getData();
+      }, []);
+    
     const handleClick = () => {
        
             setCount(count + 1)
@@ -23,6 +29,15 @@ function WheelOfDoom() {
        
     }
 
+    const getData = async () => {
+        const data = await UserHandler.loadUsers();
+        setUsers(data);
+      };
+
+    //   getData();
+      console.log(users);
+   
+
     return (
         <main id="background">
             <button id="button" onClick={handleClick}>
@@ -35,6 +50,9 @@ function WheelOfDoom() {
             </div>
             <div>
             <p>You clicked {count} times</p>
+            <div className="coder-list">
+
+            </div>
  
         </div>
            

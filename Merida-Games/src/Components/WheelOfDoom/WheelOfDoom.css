@@ -51,6 +51,15 @@ div {
     text-align: center;
 }
 
+.coder-list {
+    height: 100%;
+    width: 100%;
+}
+
+#user {
+    height: 200px;
+    width: 200px;
+}
 p {
     font-family: fantasy;
     font-size: larger;
