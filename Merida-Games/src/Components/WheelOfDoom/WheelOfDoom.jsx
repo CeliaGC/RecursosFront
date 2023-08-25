@@ -1,6 +1,6 @@
 import UserHandler from "../../handler/userHandler";
 import "../wheelOfDoom/WheelOfDoom.css"
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useForm } from 'react';
 
 // en la función getdata llamo a handler para cargar la lista de participantes en el sorteo 
 
@@ -10,10 +10,11 @@ function WheelOfDoom() {
     const [count, setCount] = useState(0)
     const [users, setUsers] = useState([])
 
+
     const arrayNames = ["Anthony", "Brayan", "Antonio", "Rodrigo", "Rebeca", "Christian", "Raúl", "Yo", "Juan", "Miguel", "Isabel", "Celia", "Javi", "Laura A Secas", "Slava", "Fran", "Celia Prieto", "Gemma", "Ninguno jaja"]; // tu lista de nombres
 
     // useEffect es un hook que encapsula a getData() porque esto impide que la carga de los datos entre en un bucle infinito
-    // ahora faltaría crear un formulario y usar un hook, useForm, para recoger esos datos y llamar a handler para acceder a la función
+    // ahora faltaría crear un formulario y usar un hook, useForm, con una función handleSubmit, para recoger esos datos y llamar a handler para acceder a la función
     // submit, que da la orden a service para ejecutar un post y le pasa el objeto que se va a insertar en la tabla de usuarios. Lo dejo 
     //para que investiguéis y practiquéis con este repositorio averiguando cómo resolver este último paso
     useEffect(() => {
@@ -29,6 +30,7 @@ function WheelOfDoom() {
             setClicked(true);
         
     }
+
 
     function selector() {
         let result = Math.floor(Math.random() * arrayNames.length);
@@ -60,7 +62,7 @@ function WheelOfDoom() {
                 <div id="user" key={u.id}>{u.Name}</div>
             ))}
         
-
+            <div><button></button></div>
            
  
         </div>

@@ -1,12 +1,13 @@
 import './App.css'
-import { WheelOfDoom } from './Components/wheelOfDoom/WheelOfDoom'
+
+import HomeView from './pages/HomeView'
 
 function App() {
 
 
   return (
     <>
-      <WheelOfDoom/>
+      <HomeView/>
     </>
   )
 }

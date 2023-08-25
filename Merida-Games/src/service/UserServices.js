@@ -24,7 +24,7 @@ async getAllUsers() {
     return allUsers;
 },
 
-    async submit(newUser){
+    async submitUser(newUser){
       await apiClient.post("/Users", newUser)
     },
 
