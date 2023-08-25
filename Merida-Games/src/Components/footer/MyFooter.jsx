@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function MyFooter() {
   return (
-    <Navbar className="bg-body-tertiary">
+    <Navbar className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
         <Navbar.Toggle />
