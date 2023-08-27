@@ -4,8 +4,8 @@
   background-position: center;
   height:18.75rem;
   width: 18.75rem;
-  /* margin-left: 31.25rem; */
-  /* transform: translate(150%, -20%);
+   margin-left: 31.25rem; 
+  transform: translate(150%, -20%);
 }
 
 a {
@@ -61,4 +61,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */ 
+}  */

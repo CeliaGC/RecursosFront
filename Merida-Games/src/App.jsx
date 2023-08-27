@@ -1,15 +1,15 @@
-import './App.css'
+// import './App.css'
 
-import HomeView from './pages/homeView/HomeView'
+// import HomeView from './pages/homeView/HomeView'
 
-function App() {
+// function App() {
 
 
-  return (
-    <>
-      <HomeView/>
-    </>
-  )
-}
+//   return (
+//     <>
+//       <HomeView/>
+//     </>
+//   )
+// }
 
-export default App
+// export default App

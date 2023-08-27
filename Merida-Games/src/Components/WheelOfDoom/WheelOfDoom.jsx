@@ -59,10 +59,10 @@ function WheelOfDoom() {
             <p>You clicked {count} times</p>
 
             {users.map(u => (
-                <div id="user" key={u.id}>{u.Name}</div>
+                <div id="user" key={u.id}><h3>{u.Name}</h3></div>
             ))}
         
-            <div><button></button></div>
+            
            
  
         </div>

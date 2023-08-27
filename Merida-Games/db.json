@@ -62,6 +62,18 @@
         "Name": "Isabel"
       }
       
+    ],
+    
+    "games": [
+      {"id": 0,
+      "name": "wheelOfDoom",
+      "img": "../src/assets/img/bocadillo.png"
+    },
+    {"id": 1,
+    "name": "FirstUnique",
+    "img": "../src/assets/img/bocadillo.png"
+  }
+
     ]
   }
 
