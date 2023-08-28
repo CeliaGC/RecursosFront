@@ -5,9 +5,9 @@ import MyNavbar from "../../Components/navbar/MyNavbar";
 function GamesView(){
     return (
         <>
-        <MyNavbar/>
+
         <GamesList/>
-        <MyFooter/>
+ 
         </>
     )
 }
