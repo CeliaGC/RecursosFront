@@ -16,8 +16,9 @@ Actualmente hay cuatro ramas:
 
 
 Stack utilizado:  
-React - json server - axios - node - css - javaScript - HTML 
+React - json server - axios - node - css - javaScript - HTML - React Router Dom - React Bootstrap
 
 Next Steps:
 
-Organizar componentes en vistas, instalar router, usar librerías de estilos
+Testing, token, login de usuario, completar el planteamiento de aplicación en cada rama para que resulte en cada una una app acabada que
+va incrementando arquitectura, stack, complejidad, funcionalidades... respecto a la anterior.
