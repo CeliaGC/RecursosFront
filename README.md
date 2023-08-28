@@ -5,4 +5,4 @@ This is a repository nesting several repositories as a resource for Mérida Code
 The stack will include by the end: HTML, CSS, JS, DOM, REACT, Json Server, NodeJS, JQuery, Typescript, Jest.
 As next steps, there is an idea of gathering some of the "katas" in a Single Page Application 'Merida-games' built up with react, with fake api storage and plenty of Jest tests.
 
-There is three branches, each one corresponds to a new stage in the development of the mentioned Merida-games app. Consult itw own Readme for further information
+There is four branches, each one corresponds to a new stage in the development of the mentioned Merida-games app. Consult itw own Readme for further information
