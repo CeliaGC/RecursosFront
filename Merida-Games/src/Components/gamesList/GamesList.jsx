@@ -47,6 +47,7 @@ function GamesList() {
                   </Card.Body>
                  
                   <Card.Footer style={{display:"flex", flexDirection:"row",justifyContent:'space-evenly', alignContent:"flex-end"}}>
+                    <Button></Button>
                   {/* <Link to={`/editImage/${i.id}`} ><Button variant="outline-dark" size='lg'>Edit</Button></Link> */}
                   {/* <Button variant="outline-dark" size='lg' onClick={()=>deleteImage(i.id)}>Delete</Button> */}
                   </Card.Footer>

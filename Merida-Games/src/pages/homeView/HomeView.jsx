@@ -10,9 +10,9 @@ function HomeView(){
 return(
 
     <div id="home-flex">
-    <MyNavbar/>
+  
     <div id="wellcome"><h1>Wellcome to Mérida Games</h1></div>
-    <MyFooter/>
+
     </div>
 
 )
