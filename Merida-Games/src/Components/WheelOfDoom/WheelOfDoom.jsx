@@ -10,7 +10,7 @@ function WheelOfDoom() {
     const [count, setCount] = useState(0)
     const [users, setUsers] = useState([])
 
-    const arrayNames = ["Anthony", "Brayan", "Antonio", "Rodrigo", "Rebeca", "Christian", "Raúl", "Yo", "Juan", "Miguel", "Isabel", "Celia", "Javi", "Laura A Secas", "Slava", "Fran", "Celia Prieto", "Gemma", "Ninguno jaja"]; // tu lista de nombres
+    // const arrayNames = ["Anthony", "Brayan", "Antonio", "Rodrigo", "Rebeca", "Christian", "Raúl", "Yo", "Juan", "Miguel", "Isabel", "Celia", "Javi", "Laura A Secas", "Slava", "Fran", "Celia Prieto", "Gemma", "Ninguno jaja"]; // tu lista de nombres
 
     // useEffect es un hook que encapsula a getData() porque esto impide que la carga de los datos entre en un bucle infinito
     // ahora faltaría crear un formulario y usar un hook, useForm, para recoger esos datos y llamar a handler para acceder a la función
@@ -31,8 +31,8 @@ function WheelOfDoom() {
     }
 
     function selector() {
-        let result = Math.floor(Math.random() * arrayNames.length);
-        setAfortunado(arrayNames[result]);
+        let result = Math.floor(Math.random() * users.length);
+        setAfortunado(users[result].Name);
        
     }
 
