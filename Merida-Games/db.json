@@ -67,12 +67,14 @@
     "games": [
       {"id": 0,
       "name": "wheelOfDoom",
-      "img": "../src/assets/img/bocadillo.png"
+      "img": "../src/assets/img/bocadillo.png",
+      "url": "http://localhost:5174/wheelOfView"
     },
     {"id": 1,
     "name": "FirstUnique",
-    "img": "../src/assets/img/bocadillo.png"
-  }
+    "img": "../src/assets/img/bocadillo.png",
+    "url": "http://localhost:5174/first-and-unique"
+  } 
 
     ]
   }

@@ -5,9 +5,7 @@ import MyNavbar from "../../Components/navbar/MyNavbar";
 function WheelOfView(){
     return(
         <>
-        <MyNavbar/>
         <WheelOfDoom/>
-        <MyFooter/>
         </>
     )
 }

@@ -3,6 +3,7 @@ import {GamesHandler} from "../../handler/GamesHandler";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Col, Row } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 function GamesList() {
 
@@ -47,7 +48,7 @@ function GamesList() {
                   </Card.Body>
                  
                   <Card.Footer style={{display:"flex", flexDirection:"row",justifyContent:'space-evenly', alignContent:"flex-end"}}>
-                    <Button></Button>
+                    <Link to={g.url} ><Button></Button></Link>
                   {/* <Link to={`/editImage/${i.id}`} ><Button variant="outline-dark" size='lg'>Edit</Button></Link> */}
                   {/* <Button variant="outline-dark" size='lg' onClick={()=>deleteImage(i.id)}>Delete</Button> */}
                   </Card.Footer>
