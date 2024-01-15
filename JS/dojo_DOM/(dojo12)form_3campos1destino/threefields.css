@@ -1,0 +1,28 @@
+#msgCont {
+    height: 18.75rem;
+    width: 18.75rem;
+    border: .0625rem black solid;
+    border-radius: 10%;
+    margin: 0vh 50vh;
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+#form {
+    margin: 0vh 60vh;
+}
+
+#messenger {
+    border: .0625rem black solid;;
+}
+
+#mailBoxes {
+    width:max-content;
+    height: min-content;
+    margin: .3125rem;
+}

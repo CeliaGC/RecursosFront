@@ -1,0 +1,39 @@
+#msgCont {
+    height: 18.75rem;
+    width: 400px;
+    border: .0625rem black solid;
+    border-radius: 10%;
+    margin: 0vh 50vh;
+    padding: .625rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: flex-start;;
+    
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin: 0vh 60vh;
+}
+
+.msg {
+    width: 12.5rem;
+    margin: .3125rem;
+}
+
+#messenger {
+    width: 6.25rem;
+    margin-top: 1.25rem;
+    margin-left: .3125rem;
+}
+
+.mailBoxes{
+    width: 30%;
+    height: min-content;
+    margin: .3125rem;
+    border: .0625rem solid black;
+    text-align: center;
+}

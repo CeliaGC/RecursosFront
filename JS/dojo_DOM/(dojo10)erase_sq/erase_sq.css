@@ -1,0 +1,17 @@
+#fatherSquare {
+    height: 18.75rem;
+    width: 20rem;
+    border: .0625rem solid black;
+    text-align: center;
+    overflow-y: scroll;
+    font-size: .5rem;
+    
+}
+
+#childSquare {
+    height: 9.375rem;
+    width: 12.5rem;
+    border: .0625rem solid black;
+    margin: 0 auto;
+    text-align: center;
+}

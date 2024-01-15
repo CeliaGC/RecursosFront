@@ -1,0 +1,10 @@
+#type{
+    height: 1.25rem;
+    width: 12.5rem;
+}
+
+#textContainer {
+    height: 18.75rem;
+    width: 18.75rem;
+    border: 1px solid black;
+}
