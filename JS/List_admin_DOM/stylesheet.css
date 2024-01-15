@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'camingocodebold';
+    src: url('Archivos/web fonts/camingocode_bold_macroman/CamingoCode-Bold-webfont.eot');
+    src: url('Archivos/web fonts/camingocode_bold_macroman/CamingoCode-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Archivos/web fonts/camingocode_bold_macroman/CamingoCode-Bold-webfont.woff2') format('woff2'),
+         url('Archivos/web fonts/camingocode_bold_macroman/CamingoCode-Bold-webfont.woff') format('woff'),
+         url('Archivos/web fonts/camingocode_bold_macroman/CamingoCode-Bold-webfont.ttf') format('truetype'),
+         url('Archivos/web fonts/camingocode_bold_macroman/CamingoCode-Bold-webfont.svg#camingocodebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*::-webkit-scrollbar {
+    width: 0.75rem;
+    
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(230, 230, 230, 0.722);
+    border-radius: 1.25rem;
+    
+    
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 0, 0, 0.77);
+    border-radius: 1.25rem;
+    border: .1875rem solid rgba(230, 230, 230, 0.722);
+    
+  }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 25% 55% 20%;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Archivos/pizzaplanet-disney-Fondo\ 2\ \(1\).png);
+    margin: 0;
+    position: relative;
+
+}
+
+#groundControl{
+    position: absolute;
+    bottom: 0;
+    right: 1.875rem;
+    opacity: 0.7;
+}
+
+header {
+    
+    background-size: cover;
+    background-position-y: -6.25rem;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+}
+
+#bk {
+    background-image: url(Archivos/Letrero\ planet\ 1.png);
+    background-size:inherit;
+    width: 20%;
+    margin-left: 2.5rem;
+    transform:rotate(-25deg);
+    overflow: visible;
+   
+
+}
+
+#nameApp {
+    font-size: 6.25rem;
+    font-family: 'camingocodebold';
+    color: rgba(255, 0, 0, 0.77);
+    text-shadow: 0px 0px .625rem  rgba(255, 0, 0, 0.77);
+    text-align: left;
+    text-justify: auto;
+    margin: 0 auto;
+    padding-top: 1.25rem;
+    padding-right: 12.5rem;
+    width: 80%;
+    
+}
+
+#dataForm{
+    width: 100%;
+    height: 100%;
+    background-image: url(Archivos/RocketBW.png);
+    background-size: cover;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+
+#rocketLaunch {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 100%;
+    height: 100%;
+}
+
+.dataFields {
+    display: flex ;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-between;
+    padding: .4375rem;
+    position: relative;
+    left: 43%;
+    top: 15%;
+    font-family: 'camingocodebold';
+    font-size: .9375rem;
+
+}
+
+#data {
+    top: 20%;
+    left: 37%;
+}
+
+input {
+    border: .125rem green solid;
+    border-radius: .3125rem .3125rem 0rem 0rem;
+
+}
+
+#sendData {
+    border: .125rem black solid;
+    font-family: 'camingocodebold';
+    border-radius: .3125rem .3125rem 0rem 0rem;
+    
+}
+
+#studentsNStaff {
+    height: 18.75rem;
+    display: flex;
+    justify-content:space-evenly;
+
+}
+
+#tableShape{
+    border: 2px green solid;
+    box-shadow: 0px 0px 20px green;
+    width: 55%;
+    border-radius: .625rem;
+    padding: 2%;
+    height: 100%;
+    overflow-y: scroll;
+
+}
+
+table {
+    color: aliceblue;
+    padding: 2%;
+    font-family: 'camingocodebold';
+    background-color: rgba(240, 248, 255, 0.052);
+    
+}
+
+th {
+    border: .0625rem solid rgb(0, 18, 0);
+    text-align: center;
+    width: 9.375rem;
+    height: 1.2rem;
+    background-color: green;
+    border-radius: .625rem;
+
+}
+
+td {
+    border: .0625rem solid green;
+    text-align: center;
+    width: 9.375rem;
+    height: 1.2rem;
+    border-radius: .625rem;
+}
+
+#killBt {
+    background-color: rgba(0, 128, 0, 0.48);
+    height: min-content;
+    width: 3rem;
+    border: top width 1px;
+    border-color: white;
+    border-radius: 0.625rem;
+    color: white;
+}
+
+#fakeButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.fkb {
+    background-color: rgba(0, 128, 0, 0.48);
+    height: min-content;
+    width: 7rem;
+    border: top width 1px;
+    border-color: white;
+    border-radius: 0.625rem;
+    color: white;
+
+}
+
+#sendData {
+    width: max-content;
+}
+
+footer {
+    height: 100%;
+}
+
+h2 {
+    margin: 0;
+}
+
+#footerText {
+    font-size: 3.125rem;
+    font-family: 'camingocodebold';
+    color: aliceblue;
+
+}
+
+#footerText2 {
+    font-size: 3.125rem;
+    font-family: 'camingocodebold';
+    color: aliceblue;
+    text-align: center;
+}
+
+
+
+@media(max-width: 48rem) {
+    body{
+        width: 48rem;
+        height: 64rem;
+        display: grid;
+        background-image: url(Archivos/pizzaplanet-disney-Fondo\ 2\ \(1\).png);
+        background-size: cover;
+        grid-template-columns: 0.75fr 1fr;
+        grid-template-rows: 15% 55% 30%;
+        overflow: hidden;
+
+    }
+
+    #groundControl {
+        opacity: 0.15;
+        height:45%;
+    }
+   
+
+    #bk {
+        background-image: url(Archivos/Letrero\ planet\ 1.png);
+        background-size:inherit;
+        width: 40%;
+        margin-left: 1.25rem;
+        transform:rotate(-25deg);
+        overflow: visible;
+       
+    
+    }
+    
+    #nameApp {
+        font-size: 4.375rem;
+        font-family: 'camingocodebold';
+        color: rgba(255, 0, 0, 0.77);
+        text-shadow: 0px 0px .625rem  rgba(255, 0, 0, 0.77);
+        text-align: left;
+        text-justify: auto;
+        margin: 0 auto;
+        width: 60%;
+        padding-right: 6.25rem;
+        padding-top: 1.875rem;
+        
+    }
+
+    #dataForm{
+        width: 100%;
+        height: 100%;
+        background-image: url(Archivos/Rocket.rsp.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-top: 100px;
+        
+    
+    }
+    
+    #rocketLaunch {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .dataFields {
+        display: flex ;
+        flex-direction: column;
+        width: 30%;
+        justify-content: space-between;
+        padding: .4375rem;
+        position: relative;
+        left: 43%;
+        top: 8%;
+        font-family: 'camingocodebold';
+        font-size: .9375rem;
+        font-weight: .125rem;
+    
+    }
+    
+    #data {
+        top: 12%;
+        left: 35%;
+    }
+    
+    input {
+        border: .125rem green solid;
+        border-radius: .3125rem .3125rem 0rem 0rem;
+    
+    }
+    
+    #sendData {
+        border: .125rem black solid;
+        font-family: 'camingocodebold';
+        border-radius: .3125rem .3125rem 0rem 0rem;
+        
+    }
+
+    #studentsNStaff {
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-content:space-between;
+        
+    
+    }
+    
+    #tableShape{
+        border: 2px green solid;
+        box-shadow: 0px 0px 20px green;
+        border-radius: .625rem;
+        padding: 2%;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 90%;
+        margin-top: 6.25rem;
+    
+    }
+    
+    table {
+        color: aliceblue;
+        padding: 2%;
+        font-family: 'camingocodebold';
+        font-size: .3125rem;
+        
+    }
+
+    #fakeButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 1.25rem;
+    }
+
+    #killBt {
+        background-color: rgba(0, 128, 0, 0.48);
+        height: min-content;
+        width: 3.125rem;
+        border: top width 1px;
+        border-color: white;
+        border-radius: 0.625rem;
+        color: white;
+    }
+    
+    footer {
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        
+    }
+    
+    #footerText {
+        font-size: 3.125rem;
+        font-family: 'camingocodebold';
+        color: aliceblue;
+        text-align: center;
+        padding-top: 3.125rem;
+    }
+
+    #footerText2 {
+        font-size: 3.125rem;
+        font-family: 'camingocodebold';
+        color: aliceblue;
+        text-align: center;
+        text-align: right;
+        padding-right: 20%;
+        padding-top: 5rem ;
+    }
+    
+
+    
+}
+

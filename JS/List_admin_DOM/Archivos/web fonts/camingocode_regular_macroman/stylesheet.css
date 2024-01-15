@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'camingocoderegular';
+    src: url('CamingoCode-Regular-webfont.eot');
+    src: url('CamingoCode-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CamingoCode-Regular-webfont.woff2') format('woff2'),
+         url('CamingoCode-Regular-webfont.woff') format('woff'),
+         url('CamingoCode-Regular-webfont.ttf') format('truetype'),
+         url('CamingoCode-Regular-webfont.svg#camingocoderegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

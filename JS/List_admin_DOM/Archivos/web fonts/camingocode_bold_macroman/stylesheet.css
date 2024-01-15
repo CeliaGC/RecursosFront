@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'camingocodebold';
+    src: url('CamingoCode-Bold-webfont.eot');
+    src: url('CamingoCode-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CamingoCode-Bold-webfont.woff2') format('woff2'),
+         url('CamingoCode-Bold-webfont.woff') format('woff'),
+         url('CamingoCode-Bold-webfont.ttf') format('truetype'),
+         url('CamingoCode-Bold-webfont.svg#camingocodebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

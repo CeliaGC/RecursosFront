@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'camingocodeitalic';
+    src: url('CamingoCode-Italic-webfont.eot');
+    src: url('CamingoCode-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CamingoCode-Italic-webfont.woff2') format('woff2'),
+         url('CamingoCode-Italic-webfont.woff') format('woff'),
+         url('CamingoCode-Italic-webfont.ttf') format('truetype'),
+         url('CamingoCode-Italic-webfont.svg#camingocodeitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
