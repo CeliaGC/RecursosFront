@@ -88,3 +88,20 @@ const UserList = () =>{
 export default UserList;
 
 
+//Segunda parte 
+
+//Yo como usuario quiero generar una lista de participantes en un evento
+//Yo como usuario quiero dos campos de formulario donde añadir los datos "Nombre" y "Apellido" 
+//Yo como usuario quiero un botón que añada los datos del formulario a una lista
+//Yo como usuario quiero ver la lista de participantes numerada
+
+
+// Tercera parte
+
+//Yo como usuario quiero generar una lista de participantes en un evento
+//Yo como usuario quiero campos de formulario donde añadir los datos del participante
+//Yo como usuario quiero un botón que añada los datos del formulario a una lista
+//Yo como usuario quiero un campo de formulario para añadir el dato "Nombre del evento"
+//Yo como usuario quiero un botón que guarde la lista de participantes con el nombre del evento
+//Yo como usuario quiero ver la lista de participantes numerada y con su título
+
