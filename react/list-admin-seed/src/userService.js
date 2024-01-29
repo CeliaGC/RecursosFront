@@ -31,9 +31,21 @@ export const UserService = {
 
     },
 
+    //El método post para crear nuevos registros desde el formulario
+
     async submitUser(newUser){
-        console.log("hola")
+        //en el archivo json, aunque no pongamos un campo "id", para cada registro que añadamos se le asignará un id nuevo.
+        //en este caso será in id tipo string porque así lo hace json server.
+        //Sería más cómodo que fuera un campo numérico autoincrementable, que tras un registro con "id: 1" añadiera un "id: 2" al 
+        //suiguitente, pero este id como un string es igualmente válido
+        await apiClient.post("/users", newUser)
     }
    
-
+    
 }
+      //en mis proyectos con fake api nunca había sucedido que json server asigne un id string, siempre había sido el numérico y 
+      //autoincrementa, no se si es cosa de una nueva versión o un punto coma suelto por ahí. Una compi había hecho un remedio
+      //casero muy ingenioso para conseguir este id numérico. Podéis implementar su solución o dejarlo estar, repito, el id string 
+      //funciona igual. Solo que ya una se pica...
+
+      //HAPPY CODING!

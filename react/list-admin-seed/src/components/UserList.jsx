@@ -45,10 +45,10 @@ const UserList = () =>{
 
         //aquí hay que sustuir este envío de usuarios al array userList por el envío al archivo json accediendo a un método
         //POST que definamos en userService
-        
+        await UserService.submitUser(user);
     
 
-        //de regalito: el reset del formulario y por tanto de la variable user una vez enviados los datos
+     //el reset del formulario y por tanto de la variable user una vez enviados los datos
         setUser({
             userName: "",
             userSurname: ""

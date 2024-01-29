@@ -2,13 +2,8 @@
   "users": [
     {
       "id": 1,
-      "userName": "Elly",
-      "userSurname": "Elephant"
-    },
-    {
-      "id": "f569",
-      "userName": "Celia",
-      "userSurname": "dfgdfgdfg"
+      "userName": "Peppa",
+      "userSurname": "Pig"
     }
   ]
 }
