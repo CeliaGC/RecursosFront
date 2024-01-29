@@ -36,15 +36,16 @@ const UserList = () =>{
     function handleNameChange(e){
 
         
-        setUser({...user, [e.target.name]:[e.target.value]})
+        setUser({...user, [e.target.name]:e.target.value})
     };
 
 
 
-    function handleAddUserToList() {
+    async function handleAddUserToList() {
 
         //aquí hay que sustuir este envío de usuarios al array userList por el envío al archivo json accediendo a un método
         //POST que definamos en userService
+        
     
 
         //de regalito: el reset del formulario y por tanto de la variable user una vez enviados los datos
