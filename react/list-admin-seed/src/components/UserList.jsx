@@ -77,6 +77,7 @@ const UserList = () => {
         ))}
       </ul>
       <button onClick={handleDraw}>Sorteo</button>
+      <p>Seleccionado: {selectedCandidate && `${selectedCandidate.userName} ${selectedCandidate.userSurname}`}</p>
     </>
   );
 };
