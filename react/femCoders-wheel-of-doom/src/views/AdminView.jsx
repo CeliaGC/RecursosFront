@@ -17,7 +17,7 @@ function AdminView(){
 
       const currentTime = new Date().getHours();
 
-      if (currentTime < 13) {
+      if (currentTime < 12) {
         setTimeOfDay('morning');
       } else if (currentTime < 18) {
         setTimeOfDay('afternoon');
