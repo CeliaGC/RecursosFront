@@ -22,14 +22,19 @@ function LoginView(){
         <div style={{paddingTop:"200px"}}>
                 
                
-                    <button onClick={toggleLogin}>
+                    
 
     {/* Este es un operador ternario. Evalúa si una condición se cumple. En este caso evalua si isLoggedIn se cumple,
     es decir,si es true o false. Si se cumple, renderiza en el h1 el primer elemento después del interrogante. Si 
     no se cumple, renderiza el elemento siguiente a los dos puntos (que son como el else) */}
 
-                            <h1>{isLoggedIn ? 'Lets start' : 'Log In'}</h1>
-                        </button>
+    {/* En el caso del botón, si no hay click de login y isLoggedIn es falso, renderiza un botón Log in que al clicar cambiará 
+    la variable a true. Cuando esto suceda, el botón cambia a Let's start y además estará envuelto en un link para que al hacer
+    de nuevo click nos lleve a la vista home. Y todo con el mismo botón, qué maravilla. Por cierto clicando en el texto Example router
+    del navbar volvemos al login de nuevo */}
+
+                    {isLoggedIn ? <Link to={'home'}><button><h1>Let's start</h1></button></Link> : <button onClick={toggleLogin}><h1>Log in</h1> </button> }
+                        
 
                     {isLoggedIn ? <h3>Welcome back!</h3> : <h3>Please log in</h3>}
             
