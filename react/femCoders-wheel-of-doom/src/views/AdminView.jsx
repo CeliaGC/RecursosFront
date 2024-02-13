@@ -8,24 +8,35 @@ function AdminView(){
 //Tenemos esta variable inicializada en un string vacío
 
     const [timeOfDay, setTimeOfDay] = useState('');
+    let time = new Date().getHours(); 
+    const [ctime, setTime] = useState(time);
 
+     
+
+     const UpdateTime=()=>{
+    time =  new Date().getHours()
+    setTime(time)
+  }
+  setInterval(UpdateTime)
+     
+    
     //Esta función actualiza el string con un texto distinto según la hora del día. Está envuelto en un useEffect
-    //porque necesitamos que se ejecute después de montarse el componente. Si no estuviera envuelta en él, se ejecutaría
+    //porque necesitamos que se ejecute después de montarse el componente cada vez que se actualice la variable ctime
+    // de la hora actual. Si no estuviera envuelta en él, se ejecutaría
     //sólo al montarse el componente con la hora de ese momento y el saludo no se actualizaría.
       
     useEffect(() => {
 
-      const currentTime = new Date().getHours();
-
-      if (currentTime < 12) {
+      if (ctime < 12) {
         setTimeOfDay('morning');
-      } else if (currentTime < 18) {
+      } else if (ctime < 18) {
         setTimeOfDay('afternoon');
       } else {
         setTimeOfDay('evening');
       }
 
-    }, []);
+    }, [ctime]);
+    
 
     return(
         <>
