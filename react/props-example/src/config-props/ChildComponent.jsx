@@ -1,6 +1,8 @@
 import React from 'react';
 
 // Componente hijo
+//Este componente tiene unas props de color, tamaño de fuente y texto que van a otorgar un valor a las propiedades css del mismo nombre.
+//El componente padre determinará el valor de esas propiedades css
 const ChildComponent = ({ color, fontSize, text }) => {
   return (
     <div>
