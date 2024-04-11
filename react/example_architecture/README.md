@@ -7,14 +7,19 @@ Vamos a realizar un taller para pasar de este spaghetti code a una arquitectura 
 
 Clona el repo/acutaliza tu repo recursos front, ábrelo en Visual y corre los comandos necesarios en terminal para instalarlo.
 
+Comandos: npm install, json-server db.json, npm run dev
+       
+
+
 OBJETIVO DEL TALLER
 
 Vamos a dividir responsabilidades (SoC) en distintas capas:
 
--Una capa service que se encarga de la solicitud
+-Una capa service que se encarga de la solicitud a la API
+
 -Una capa handler que procesa los datos (observa los datos, el formato difiere del db.json al front)
 
-          ambaas capas service y handler deben encargarse del manejo de sus posibles errores
+          ambas capas service y handler deben encargarse del manejo de sus posibles errores
 
 -Un componente app que renderiza los datos
 

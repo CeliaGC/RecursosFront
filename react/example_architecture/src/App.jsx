@@ -4,6 +4,8 @@ const App = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
+  //esta es la solicitud a la API y su manejo de errores
+
   const fetchData = async () => {
     try {
       const response = await fetch('http://localhost:3000/data');
@@ -17,6 +19,7 @@ const App = () => {
     }
   };
 
+  //este es el procesamiento de los datos y su manejo de errores
   const handleData = (data) => {
     try {
       if (!Array.isArray(data)) {
