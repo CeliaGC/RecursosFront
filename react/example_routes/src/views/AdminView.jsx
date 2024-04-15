@@ -42,7 +42,7 @@ function AdminView(){
         <>
         <MyNavbar
                 leftButton={'Home'} leftButtonClick={'/home'}
-                rightButton={'Sorteo'} rightButtonClick={'/sorteo'}/>
+                rightButton={'Sorteo'} rightButtonClick={'/admin/sorteo'}/>
         <h1>Hi Admin</h1>
 
       <h1>Good {timeOfDay}!</h1> 

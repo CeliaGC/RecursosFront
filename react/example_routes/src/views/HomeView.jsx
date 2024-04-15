@@ -8,7 +8,7 @@ function HomeView(){
         <>
         <Navbar 
         leftButton={'Admin'} leftButtonClick={'/admin'}
-        rightButton={'Sorteo'} rightButtonClick={'/sorteo'}/>
+        rightButton={'Sorteo'} rightButtonClick={'/admin/sorteo'}/>
         
         <h1>Feel right at home</h1>
         </>
