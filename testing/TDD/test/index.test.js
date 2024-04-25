@@ -1,5 +1,10 @@
 import fizzBuzz from "../src";
 
+//los tres primeros test pasan los tres primeros casos del readme, pues entregan como argumento a fizzBuzz un solo número
+
+
+//qué pasa entonces con el cuarto caso? hay que pasar los números del 1 al 100... number no puede ser un solo número!
+//habrá que construir el test en el que pasemos a number un array de números, y 
 
 test('devuelve fizz si es divisible entre 3', () => {
  //Arrange

@@ -23,3 +23,6 @@ es que el programa encuentre palabras escondidas en la cuadrícula en los siguie
 
 Recordad: Escribimos los test (AAA) >> Hacemos que los test fallen >> Escribimos el código necesario para que los test pasen (y nada más)
           >> Hacemos que los test pasen >> Refactorizamos
+
+
+Hay comentarios, comenzad por el archivo index.test.js
