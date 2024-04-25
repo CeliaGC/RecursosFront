@@ -33,15 +33,13 @@ test('devuelve buzz si el número es divisible entre 5', ()=> {
 
 test('devuelve números del 1 al 100 con las condiciones anteriores',()=>{
 
-   let numbers = [];
+    let numbers = Array.from({length: 100}, (_, i) => i + 1);
+  
 
-    for (let i = 1; i<=100; i++){
+    let result = fizzBuzz(numbers);
+    
 
-    let result = fizzBuzz(i);
-    numbers.push(result)
-    }
-
-    expect(numbers).toBeTruthy();
+    expect(result).toMatchSnapshot();
 
 })
 
