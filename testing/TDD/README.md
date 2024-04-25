@@ -25,4 +25,4 @@ Recordad: Escribimos los test (AAA) >> Hacemos que los test fallen >> Escribimos
           >> Hacemos que los test pasen >> Refactorizamos
 
 
-Hay comentarios, comenzad por el archivo index.test.js
+Hay comentarios, si quieres verlo como un cuento comienza por el archivo index.test.js
