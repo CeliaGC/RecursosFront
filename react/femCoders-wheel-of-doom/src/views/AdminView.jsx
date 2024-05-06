@@ -40,6 +40,9 @@ function AdminView(){
 
     return(
         <>
+
+      {/* Al importar MyNavbar, definimos qué texto queremos que muestre el botón en esta vistay a qué ruta nos lleva */}
+
         <MyNavbar
                 leftButton={'Home'} leftButtonClick={'/home'}
                 rightButton={'Sorteo'} rightButtonClick={'/sorteo'}/>

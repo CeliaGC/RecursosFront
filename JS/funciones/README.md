@@ -1,0 +1,1 @@
+Distintas formas de declarar e invocar una misma función. En el propio index.js están las explicaciones pertinentes.

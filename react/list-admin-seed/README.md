@@ -1,8 +1,8 @@
-# React + Vite
+Para instalar las dependencias y levantar la app, en terminal:
+npm i
+npm run dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Ejemplo de función para generar una lista de nombres, sin permanenecia de los datos. A pesar de ser un componente simple, está importado en una vista que luego importamos en App.jsx, para familiarizarnos con la arquitectura correcta y las importaciones. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+En el archivo UserList.jsx hay tres enunciados. El primero está resuelto y comentado profusamente. Los enunciados 2 y 3 están esperando a que los resuelvas. Adelante!!

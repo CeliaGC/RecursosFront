@@ -8,24 +8,4 @@ function underlineAlt() {
     }
     
 }
-/*
-    if()
-    document.getElementById('chameleon').style.textDecoration = 'underline';
-}
 
-
-window.addEventListener("load",function(){
-    var flechaWork=document.getElementById('flecha_work');
-    var work=document.getElementById("work2");
-    flechaWork.addEventListener("click",function(){
-        if(work.style.left=="50%"){
-            work.style.left="-60%";
-            work.style.transition = "all 1.3s";
-        }
-        else{
-            work.style.left="50%";
-            work.style.transition = "all 1.3s";
-        }
-    })
-})
-*/

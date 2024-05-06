@@ -3,6 +3,7 @@
 //Sustituye o comenta el botón en el html cuando sea necesario. El código del repositorio descargado ejecuta la última función.
 
 // Función declarativa. La invocación a la función estaría en el onclick del tag button en index.html
+//Pega este button en el html, comenta el que hay allí y descomenta la función saythanks de la línea 9. Comenta el resto de código de este index.
 {/* <button onclick="sayThanks()">Buy Now</button> */}
 
 // function sayThanks(){
@@ -17,7 +18,8 @@
 //Al invocarla en el botón pasaríamos el argumento a la función, en este caso la variable global text :
 {/* <button onclick="sayThanks(text)">Buy Now</button> */}
 
-
+//Aquí está la variable global, que ahora servirá para todas las funciones. Déjala descomentada y comenta la función anterior para
+// descomentar la nueva sayThanks de la línea 24.
 let text="Gracias por su compra";
 // function sayThanks(thanksText){
 
@@ -25,8 +27,8 @@ let text="Gracias por su compra";
 //     greetingMsg.textContent = thanksText;
 // };
 
-//la función anterior, ahora autoejecutable. Ya no sería necesario hacer click en el botón, sería una función
-//que se ejecutaría al cargar la página. Usamos como argumento la misma variable declarada en la línea 19
+//A continuación la función anterior, ahora autoejecutable. Ya no sería necesario hacer click en el botón, sería una función
+//que se ejecutaría al cargar la página. Usamos como argumento la misma variable global.
 
 // (function sayThanks(thanksText){
 
@@ -34,7 +36,7 @@ let text="Gracias por su compra";
 //     greetingMsg.textContent = thanksText;
 // })(text);
 
-// la declaramos ahora como expresión de una variable, tanto declarativa como arrow function
+// Ahora la vamos a declarar como expresión de una variable, tanto declarativa como arrow function
 
 // const sayThanks = function(thanksText) {
 

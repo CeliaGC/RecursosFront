@@ -6,6 +6,7 @@ function HomeView(){
     return(
 
         <>
+        {/* Al importar MyNavbar, definimos qué texto queremos que muestre el botón en esta vistay a qué ruta nos lleva */}
         <Navbar 
         leftButton={'Admin'} leftButtonClick={'/admin'}
         rightButton={'Sorteo'} rightButtonClick={'/sorteo'}/>

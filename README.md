@@ -1,0 +1,4 @@
+Este es un repositorio que anida diversos repositorios para usar como recurso didáctico en bootcamps de desarrollo web. Contiene actividades y ejemplos para aprender a desarrollar la parte frontend con Javascript, interfaz DOM y React, junto a otras librerías de estilos y módulos.
+Están agrupados en las carpetas JS, React y testing, donde hay katas sencillas y repositorios de ejemplo a modo de pequeñas muestras o semillas a partir de las que se pueden desarrollar proyectos más completos.
+
+Cada repositorio contiene en su archivo README la información sobre el contenido e instrucciones para su instalación.

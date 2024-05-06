@@ -1,4 +1,4 @@
-Clona este repositorio
+Ya has clonado el repo?
 Haz npm update para instalar las dependencias
 
 Reto TDD I - Kata FizzBuzz

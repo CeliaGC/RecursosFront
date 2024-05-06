@@ -1,5 +1,9 @@
+Para instalar las dependencias y levantar la app, en terminal:
+npm i
+npm run dev
+
 Este es un repo de ejemplo de iniciación a React para conocer algunos conceptos
-Al correr la app con npm run dev, vemos un botón que al clicarlo realiza un sorteo entre un array de participantes que hay en el código.
+Al levantar la app con npm run dev, vemos un botón que al clicarlo realiza un sorteo entre un array de participantes que hay en el código.
 
 Visita el archivo WheelOfDoom.jsx para ver cómo se ejecuta la función del sorteo y un ejemplo de cómo funciona el hook useState de React. Verás que ese archivo es un componente React pero hecho de manera imperativa, con DOM.
 

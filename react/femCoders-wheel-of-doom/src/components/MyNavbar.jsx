@@ -3,6 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+// Creamos un navbar y pasamos unas props para renderizar un contenido distinto y un enlace distinto en los botones del navbar
+// según en la vista donde importemos el componente
+
 function MyNavbar({ leftButton, leftButtonClick, rightButton, rightButtonClick }) {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">

@@ -1,8 +1,13 @@
-# React + Vite
+Pequeña aplicación para ver distintas vistas enrutadas y distinto renderizado de un mismo componente.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Para instalar las dependencias y levantar la app, en terminal:
+npm i
+npm run dev
 
-Currently, two official plugins are available:
+Hay un componente MyNavbar al que pasamos props para que renderice distinto texto en los botones y conduce a páginas distintas según lo estemos importando en una u otra vista.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Las vistas Home y Lotto tienen un saludo estático, pero los de la vista Admin y Login son dinámicos. El de Admin cambia según la hora del día y el de Login cambia según hayamos clicado o no en el botón login (es fake, no hay login).
+
+En App se enrutan las distintas vistas.
+
+En cada archivo está la información relevante del funcionamiento.
