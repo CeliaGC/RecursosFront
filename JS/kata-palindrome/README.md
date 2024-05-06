@@ -14,7 +14,7 @@ Salida esperada:
 
 console.log(esPalindromo(texto1)); ===> resultado: true
 
-consolo.log(esPalindromo(texto2)); ===> resultado: false
+consol.log(esPalindromo(texto2)); ===> resultado: false
 
 Paso 1: Definir la función
 
