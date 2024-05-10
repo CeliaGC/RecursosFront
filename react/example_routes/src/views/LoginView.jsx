@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import React, { useState } from 'react';
+import LoginForm from "../components/LoginForm";
 
 function LoginView(){
 
@@ -13,18 +14,16 @@ function LoginView(){
 
       return(
 
-        <div style={{paddingTop:"200px"}}>
+        <>
+          <LoginForm />
+          <div style={{paddingTop:"200px"}}>
+                  
+            {isLoggedIn ? <Link to={'home'}><button><h1>Let's start</h1></button></Link> : <button onClick={toggleLogin}><h1>Log in</h1> </button> }
                 
-
-
-                    {isLoggedIn ? <Link to={'home'}><button><h1>Let's start</h1></button></Link> : <button onClick={toggleLogin}><h1>Log in</h1> </button> }
-                        
-
-                    {isLoggedIn ? <h3>Welcome back!</h3> : <h3>Please log in</h3>}
-            
-                 
-                </div>
-
+            {isLoggedIn ? <h3>Welcome back!</h3> : <h3>Please log in</h3>}
+                   
+          </div>
+          </>
 
       )
 }

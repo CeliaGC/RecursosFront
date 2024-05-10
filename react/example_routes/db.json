@@ -1,0 +1,71 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "usuario1",
+      "password": "contraseña1"
+    },
+    {
+      "id": "2",
+      "username": "usuario2",
+      "password": "contraseña2"
+    }
+  ],
+  "login": [
+    {
+      "id": "3f9b",
+      "username": "usuario1",
+      "password": "contraseña1"
+    },
+    {
+      "id": "241a",
+      "username": "usuario1",
+      "password": "contraseña1"
+    },
+    {
+      "id": "c332",
+      "username": "usuario1",
+      "password": "contraseña1"
+    },
+    {
+      "id": "8f54",
+      "username": "Celia",
+      "password": "asdasd2"
+    },
+    {
+      "id": "6c97",
+      "username": "Celia",
+      "password": "asdasd2"
+    },
+    {
+      "id": "8d7f",
+      "username": "Celia",
+      "password": "asdasd2"
+    },
+    {
+      "id": "4a6c",
+      "username": "usuario1",
+      "password": "contraseña1"
+    },
+    {
+      "id": "a938",
+      "username": "usuario1",
+      "password": "contraseña1"
+    },
+    {
+      "id": "1336",
+      "username": "usuario1",
+      "password": "contraseña1"
+    },
+    {
+      "id": "0411",
+      "username": "usuario1",
+      "password": "contraseña1"
+    },
+    {
+      "id": "dce7",
+      "username": "Celia",
+      "password": "asdasd2"
+    }
+  ]
+}
