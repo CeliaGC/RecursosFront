@@ -1,4 +1,6 @@
 import { Outlet } from "react-router-dom";
+import PrivateRoute from "../router/PrivateRoute";
+import { AuthProvider } from "../authUtils/AuthProvider";
 
 
 const LayoutPrivate = () => {
@@ -9,9 +11,14 @@ const LayoutPrivate = () => {
     return (
 
         <>
-        
-        <Outlet />
-
+        <Outlet/>
+        {/* <AuthProvider> 
+           
+             
+       
+        </AuthProvider> */}
+  
+ 
         </>
     )
 

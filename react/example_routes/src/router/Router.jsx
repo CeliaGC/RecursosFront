@@ -5,6 +5,8 @@ import HomeView from '../views/HomeView';
 import LottoView from '../views/LottoView';
 import AdminView from '../views/AdminView';
 import LayoutPrivate from "../layout/LayoutPrivate";
+import PrivateRoute from "./PrivateRoute";
+import { AuthProvider } from "../authUtils/AuthProvider";
 
 export const Router = createBrowserRouter([
     {
@@ -18,26 +20,27 @@ export const Router = createBrowserRouter([
             {
                 path:'/home',
                 element: <HomeView />
-
             }
-
         ]
     },
     {
-        
-            path: '/admin',
-            element: <LayoutPrivate />,
-            children:[
-                {
-                    index: true,
-                    element:<AdminView />
-                },
-                {
-                    path: '/admin/sorteo',
-                    element: <LottoView />
-                }
-
-            ]
-        
+        path: '/admin/*',
+        element: (
+            <AuthProvider> {/* Asegúrate de que AuthProvider envuelve todo el árbol */}
+                <PrivateRoute path="/admin">
+                    <LayoutPrivate />
+                </PrivateRoute>
+            </AuthProvider>
+        ),
+        children:[
+            {
+                index: true,
+                element:<AdminView />
+            },
+            {
+                path: 'sorteo',
+                element: <LottoView />
+            }
+        ]
     }
-])
+]);

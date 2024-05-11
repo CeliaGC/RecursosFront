@@ -2,14 +2,20 @@ import { LoginService } from "../services/LoginService"
 
 export const LoginHandler = {
 
-    userLogin(username, password) {
+   userLogin(userName, userPassword) {
+
+        const userAdmin =
+        {
+            'userName': userName,
+            'userPassword': userPassword,
+            'userType' : 'admin'
+        }
 
        
-              return LoginService.submitLogin(username,password)
-
+              return LoginService.submitLogin(userAdmin)
+              
           }
 
-    
     
 
 }

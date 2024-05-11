@@ -3,13 +3,14 @@ import axios from 'axios';
 import { LoginHandler } from '../handlers/LoginHandler';
 
 const LoginForm = () => {
-  const [username, setUsername] = useState('');
+  const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
+
   const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    LoginHandler.userLogin(username, password)
+    LoginHandler.userLogin(userName, password)
     // .then(response =>{
     //     if(response.status = 201){
     //         console.log("Bienvenido, tú")
@@ -41,7 +42,7 @@ const LoginForm = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label>Nombre de usuario:</label>
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input type="text" value={userName} onChange={(e) => setUserName(e.target.value)} />
         </div>
         <div>
           <label>Contraseña:</label>
