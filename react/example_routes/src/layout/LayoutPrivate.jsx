@@ -11,12 +11,12 @@ const LayoutPrivate = () => {
     return (
 
         <>
-        <Outlet/>
-        {/* <AuthProvider> 
+        
+ 
            
-             
+         <Outlet/>    
        
-        </AuthProvider> */}
+       
   
  
         </>

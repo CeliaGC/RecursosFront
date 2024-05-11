@@ -6,7 +6,8 @@ const PrivateRoute = ({ path, element }) => {
   const { isAuthenticated } = useAuth(); // Obtener el estado de autenticación del contexto de autenticación que hemos creado
 
   return isAuthenticated ? (
-    <Routes path={path} element={element} />
+    // <Routes path={path} element={element} />
+    element
   ) : (
     <Navigate to="/" replace state={{ from: path }} /> // Redirigir a la página de inicio de sesión si el usuario no está autenticado
   );
