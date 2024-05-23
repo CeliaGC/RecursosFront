@@ -1,16 +1,26 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import axios from 'axios';
 import { LoginHandler } from '../handlers/LoginHandler';
+import { useAuth} from '../authUtils/AuthProvider';
+
+
 
 const LoginForm = () => {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
-
   const [error, setError] = useState(null);
+  const {login} = useAuth();
+ 
+
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    LoginHandler.userLogin(userName, password)
+    
+    LoginHandler.userLogin(userName, password, (userData) =>
+    login(userData))
+    
     // .then(response =>{
     //     if(response.status = 201){
     //         console.log("Bienvenido, tú")
@@ -48,7 +58,8 @@ const LoginForm = () => {
           <label>Contraseña:</label>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
-        <button type="submit">Iniciar sesión</button>
+         <button type='sumbit'><h1>Log in</h1> </button>
+        {/* <button type="submit">Iniciar sesión</button> */}
       </form>
     </div>
   );
