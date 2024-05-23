@@ -21,6 +21,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = (userData) => {
+    console.log('Logging in user:', userData);
     Cookies.set('userName', userData.user);
     Cookies.set('userType', userData.token);
 

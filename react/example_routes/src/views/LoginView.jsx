@@ -4,10 +4,10 @@ import { useAuth } from "../authUtils/AuthProvider";
 import { Link } from 'react-router-dom';
 
 function LoginView(){
-
- 
   const { isAuthenticated, user } = useAuth();
- 
+
+  console.log('isAuthenticated:', isAuthenticated, 'user:', user);
+
   return isAuthenticated ? (
     <> 
       <h3>Welcome back {user}!</h3>
