@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
 
+
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
@@ -42,8 +43,11 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ ...authState, login, logout }}>
+    <AuthContext.Provider value={{ ...authState, login, logout}}>
       {children}
+      {/* <LayoutPrivate /> */}
+      {/* <Router /> */}
+      {/* <PrivateRoute /> */}
     </AuthContext.Provider>
   );
 };

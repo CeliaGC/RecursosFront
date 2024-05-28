@@ -25,13 +25,14 @@ export const Router = createBrowserRouter([
     },
     {
         path: '/admin',
+        
         element: (
             <AuthProvider>
                 <PrivateRoute path="/admin/*" element={<LayoutPrivate/ >}>
                     {/* <LayoutPrivate /> */}
                 </PrivateRoute>
             </AuthProvider>
-        ),
+     ),   
         children:[
             {
                 index: true,

@@ -1,6 +1,9 @@
 import MyNavbar from "../components/MyNavbar";
+import { useAuth } from "../authUtils/AuthProvider";
 
 function LottoView(){
+
+    
     return(
         <>
             <MyNavbar
